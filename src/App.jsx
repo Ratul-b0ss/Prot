@@ -328,15 +328,15 @@ const App = () => {
   return (
     <>
       <ReactLenis root options={lenisOptions} />
-      <main className='min-h-screen w-full bg-black text-white p-8'>
+      <main className='min-h-screen w-full bg-[#000000] text-black p-8'>
         <div className='h-screen w-full bg-transparent fixed flex z-50 items-center justify-center top-0 left-0'>
-          <h1 className='text-[6rem] uppercase text-white text-shadow-md text-shadow-black/30 font-bold'>Shariful Alam</h1>
+          <h1 className='text-[6rem] uppercase text-[#ffffff] text-shadow-sm text-shadow-black/30 font-bold'>Shariful Alam</h1>
         </div>
         <div className='gda grid grid-cols-8 auto-rows-[150px] gap-y-8 z-10 max-w-6xl mx-auto'>
           {images.map((item, index) => (
             <div
               key={index}
-              className={`${item.layoutClass} gde bg-zinc-900 z-10 rounded-xl overflow-hidden border border-zinc-800`}
+              className={`${item.layoutClass} gde bg-zinc-900 z-10 rounded-xl overflow-hidden `}
             >
               <img
                 src={item.src}
